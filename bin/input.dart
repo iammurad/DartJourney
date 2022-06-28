@@ -1,8 +1,17 @@
 import 'dart:io';
 
 void main() {
-  print("Tell me your BirthDate Year");
-  var year = int.parse(stdin.readLineSync()!);
-  var age = DateTime.now().year - year;
-  print('Your Age $age');
+  while (true) {
+    try {
+      print("Tell me your BirthDate Year");
+      var year = int.parse(stdin.readLineSync()!);
+      var age = DateTime.now().year - year;
+      print('Your Age $age');
+      break;
+    } on FormatException {
+      print('Invalid Value');
+    } catch (e) {
+      print('Error Message $e');
+    }
+  }
 }
