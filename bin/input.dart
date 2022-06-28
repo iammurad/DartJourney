@@ -1,8 +1,8 @@
 import 'dart:io';
 
 void main() {
-  print("tevelludunuzu yazin yashinizi deyek");
-  var il = int.parse(stdin.readLineSync()!);
-  var yas = DateTime.now().year - il;
-  print('Sizin yaşınız $yas');
+  print("Tell me your BirthDate Year");
+  var year = int.parse(stdin.readLineSync()!);
+  var age = DateTime.now().year - year;
+  print('Your Age- $age');
 }
