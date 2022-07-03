@@ -1,5 +1,5 @@
 void main(List<String> args) {
-  var a = [2, 2.3, 'Murad', true];
+  // var a = [2, 2.3, 'Murad', true];
   var b = [2, 2.3, 'Murad', true];
   fun(b);
 }
